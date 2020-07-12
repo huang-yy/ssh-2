@@ -36,6 +36,7 @@ public class EmployeeAction extends ActionSupport implements RequestAware, Model
 	public String list() {
 		System.out.println("left.....");
 		System.out.println("right.....");
+		System.out.println("hotFix....");
 		request.put("employees", employeeService.getAll());
 		return "list";
 	}
